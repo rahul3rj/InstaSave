@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .is-root {
+    color-scheme: dark;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .is-input {
+    @apply bg-igblack text-igwhite placeholder-iggray border border-igborder rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-igpink focus:border-igpink transition;
+  }
+  .is-btn {
+    @apply bg-igpink text-igwhite font-semibold rounded-lg px-3 py-2 hover:bg-igpinkhover active:scale-[.98] transition;
+  }
+  .is-btn-ghost {
+    @apply bg-igblack text-igwhite border border-igborder rounded-lg px-3 py-2 hover:border-igpink transition;
+  }
+  .is-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full border border-igborder text-sm text-igwhite whitespace-nowrap cursor-pointer hover:border-igpink hover:text-igpink transition;
+  }
+  .is-tag-active {
+    @apply border-igpink text-igpink;
+  }
+}
