@@ -100,5 +100,5 @@ If you find **InstaSave** helpful, please give it a **⭐ Star** on [GitHub](htt
 ---
 
 <p align="center">
-  Crafted with ❤️ for Instagram Power Users
+  Crafted with ❤️ by Rahul Jha
 </p>
